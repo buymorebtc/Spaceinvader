@@ -6,10 +6,13 @@
 	<title>Hello World!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<style type="text/css" media="screen">
+    
 		/* Google Fonts */
 		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 		/*-----------------------------------*/
-
+        {
+            box-sizing: border-box;
+}
 		body,
 		td,
 		th {
@@ -43,27 +46,23 @@
 			font-size: 72px;
 		}
 
-		.container {
-			background-position: center;
-			background-attachment: fixed;
-
-		}
-
 		.column {
-  			 float: right;
- 			 width: 75%;
-			  padding: 15px;
-		}
-		.row:after {
-  			content: "";
-			display: table;
- 		    clear: both;
-		}
-		.column2 {
 			float: left;
-			display: table;
-			padding: 15px;
+			padding: 10 px;
+			height: 300px;
+		}
 
+		.right{
+			width: 75%
+		}
+
+		.left {
+			width: 25%
+		}
+		.row::after{
+			content:"";
+			display: table;
+			clear: both;
 		}
 
 
@@ -74,31 +73,27 @@
 
 			h1 {
 				font-size: 32px;
-			}
-			.column {
-				width: 100%
-			}
+			}			}
 		}
 	</style>
 </head>
 
-<body>
-	<div class="main">
-		<h1>spaceinvader/</h1>
-		<p></p>
-	<div class="container">
-	<div class="main">
-			<div class="column">
-				<img src="Invader2.jpg"><div class="row"></div>
-			</div>
-			
-			<div class="column2">
-				<h2>sup, invader?</h2>
-			  <p>if You'rethe real invader, i got this TLD for you!</p>
-			  <p>if you're not the real invader, you can buy this for a shit ton of HNS if you REALLY want it. </p>
-			</div>
-		</div>
+<div class="row">
+    <div class="column left" style="background-color:rgb(255, 255, 255);">
+        <div class="main">
+      <img src="Invader2.jpg">
+      <div class="column right" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+      
+    </div>
+    </div>
 
+</body>
+
+</html>
 </body>
 
 </html>
