@@ -1,99 +1,61 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<title>Hello World!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<style type="text/css" media="screen">
     
 		/* Google Fonts */
 		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-		/*-----------------------------------*/
-        {
-            box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-		body,
-		td,
-		th {
-			font-family: "Press Start P2", cursive;
-			font-style: normal;
-			font-weight: 400;
-			color: rgba(255, 255, 255, 1);
-			-webkit-font-smoothing: antialiased !important;
-		}
 
-		html {
-			height: 100%;
-			width: 100%;
-			background: rgb(255, 255, 255);
-			###background-image: url(./Invader2.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-		}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
 
-		.main {
-			width: auto;
-			height: auto;
-			text-align: center;
-			margin-top: 15%;
-			font-family: 'Press Start 2P', cursive;
-			color: black;
-		}
+.left {
+  width: 25%;
+}
 
-		h1 {
-			font-size: 72px;
-		}
-
-		.column {
-			float: left;
-			padding: 10 px;
-			height: 300px;
-		}
-
-		.right{
-			width: 75%
-		}
-
-		.left {
-			width: 25%
-		}
-		.row::after{
-			content:"";
-			display: table;
-			clear: both;
-		}
+.right {
+  width: 75%
+}
 
 
-		@media screen and (max-width: 600px) {
-			body {
-				font-size: 14px;
-			}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-			h1 {
-				font-size: 32px;
-			}			}
+.main {
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin-top: 15%;
+	font-family: 'Press Start 2P', cursive;
+	color: black;
 		}
-	</style>
+</style>
 </head>
+<body>
+
+<h2>Space Invader</h2>
 
 <div class="row">
-    <div class="column left" style="background-color:rgb(255, 255, 255);">
-        <div class="main">
-      <img src="Invader2.jpg">
-      <div class="column right" style="background-color:#bbb;">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
-      </div>
-    </div>
-      
-    </div>
-    </div>
+  <div class="column left" style="background-color:rgb(255, 255, 255);">
+   <img src="Invader2.jpg">
+  </div>
+  <div class="main">
+  <div class="column right" style="background-color:rgb(255, 255, 255);">
+    <h2>Sup, Invader?</h2>
+    <p>If You're the real invader, I bought this for you!</p>
+    <p>If you're not the real invader, I guess you could bbuy it for a shit tone of HNS if you REALLY wanted it. </p>
+  </div>
+  
+</div>
 
 </body>
-
-</html>
-</body>
-
 </html>
