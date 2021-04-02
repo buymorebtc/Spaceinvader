@@ -44,11 +44,28 @@
 		}
 
 		.container {
-			background-image: url(./Invader2.jpg);
 			background-position: center;
 			background-attachment: fixed;
 
 		}
+
+		.column {
+  			 float: right;
+ 			 width: 75%;
+			  padding: 15px;
+		}
+		.row:after {
+  			content: "";
+			display: table;
+ 		    clear: both;
+		}
+		.column2 {
+			float: left;
+			display: table;
+			padding: 15px;
+
+		}
+
 
 		@media screen and (max-width: 600px) {
 			body {
@@ -58,6 +75,9 @@
 			h1 {
 				font-size: 32px;
 			}
+			.column {
+				width: 100%
+			}
 		}
 	</style>
 </head>
@@ -66,8 +86,19 @@
 	<div class="main">
 		<h1>spaceinvader/</h1>
 		<p></p>
-	</div>
-		<img src="Invader2.jpg">
+	<div class="container">
+	<div class="main">
+			<div class="column">
+				<img src="Invader2.jpg"><div class="row"></div>
+			</div>
+			
+			<div class="column2">
+				<h2>sup, invader?</h2>
+			  <p>if You'rethe real invader, i got this TLD for you!</p>
+			  <p>if you're not the real invader, you can buy this for a shit ton of HNS if you REALLY want it. </p>
+			</div>
+		</div>
+
 </body>
 
 </html>
